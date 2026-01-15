@@ -1,0 +1,25 @@
+.icon_stop {
+	display: block;
+	width: 20px;
+	/* height: 20px; */
+	aspect-ratio: 1/1;
+	background: black;
+}
+
+.icon_record {
+	display: block;
+	width: 20px;
+	/* height: 20px; */
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	background: black;
+}
+
+.icon_play {
+	display: block;
+	width: 0px;
+	height: 0px;
+	/* background: black; */
+	border: 10px transparent solid;
+	border-left: 15px red solid;
+}
