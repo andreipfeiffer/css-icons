@@ -1,165 +1,171 @@
-.icon_stop {
-	display: block;
-	width: 20px;
-	/* height: 20px; */
-	aspect-ratio: 1/1;
-	background: black;
+[data-icon="stop"] span {
+  display: block;
+  width: 20px;
+  /* height: 20px; */
+  aspect-ratio: 1/1;
+  background: black;
 }
 
-.icon_record {
-	display: block;
-	width: 20px;
-	/* height: 20px; */
-	aspect-ratio: 1/1;
-	border-radius: 50%;
-	background: black;
+[data-icon="rec"] span {
+  display: block;
+  width: 20px;
+  /* height: 20px; */
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: black;
 }
 
-.icon_play {
-	display: block;
-	width: 0px;
-	height: 0px;
-	/* background: black; */
-	border: 10px transparent solid;
-	border-left: 15px red solid;
+[data-icon="pause"] span {
+  display: block;
+  width: 5px;
+  height: 20px;
+  border-left: 5px black solid;
+  border-right: 5px black solid;
 }
 
-.icon_next {
-	display: block;
-	width: 0px;
-	height: 0px;
-	/* background: black; */
-	border: 10px transparent solid;
-	border-left: 15px red solid;
-	position: relative;
-
-	&::after {
-		content: "";
-		display: block;
-		width: 5px;
-		height: 20px;
-		background: black;
-		top: -10px;
-		position: absolute;
-	}
+[data-icon="play"] span {
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: 10px transparent solid;
+  border-left: 15px red solid;
 }
 
-.icon_ff {
-	display: block;
-	width: 24px;
-	height: 24px;
-	position: relative;
+[data-icon="next"] span {
+  display: block;
+  width: 0px;
+  height: 0px;
+  /* background: black; */
+  border: 10px transparent solid;
+  border-left: 15px red solid;
+  position: relative;
 
-	&::after,
-	&::before {
-		content: "";
-		display: block;
-		width: 0px;
-		height: 0px;
-		/* background: black; */
-		border: 10px transparent solid;
-		border-left: 15px red solid;
-		position: absolute;
-	}
-	&::before {
-		left: -6px;
-	}
-	&::after {
-		right: -6px;
-	}
+  &::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 20px;
+    background: black;
+    top: -10px;
+    position: absolute;
+  }
 }
 
-.icon_dice {
-	display: block;
-	width: 24px;
-	height: 24px;
-	border: 2px black solid;
-	border-radius: 4px;
+[data-icon="ff"] span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
 
-	&::before {
-		content: "";
-		display: block;
-		background-color: black;
-		width: 6px;
-		height: 6px;
-		border-radius: 50%;
-		transform: translate(2px, 2px);
-		box-shadow: 0px 7px 0, 0px 14px 0, 14px 0px 0, 14px 7px 0, 14px 14px 0;
-	}
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    /* background: black; */
+    border: 10px transparent solid;
+    border-left: 15px red solid;
+    position: absolute;
+  }
+  &::before {
+    left: -6px;
+  }
+  &::after {
+    right: -6px;
+  }
 }
 
-.icon_doc {
-	display: block;
-	width: 24px;
-	height: 24px;
-	border: 2px black solid;
-	border-radius: 4px;
-	background:
-		linear-gradient(to left, black 100%, transparent 0)
-			no-repeat
-			4px 4px / 16px 2px,
-		linear-gradient(to left, black 100%, transparent 0)
-			no-repeat
-			4px 8px / 8px 2px,
-		linear-gradient(to left, black 100%, transparent 0)
-			no-repeat
-			4px 12px / 12px 2px;
+[data-icon="dice"] span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px black solid;
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: black;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    transform: translate(2px, 2px);
+    box-shadow: 0px 7px 0, 0px 14px 0, 14px 0px 0, 14px 7px 0, 14px 14px 0;
+  }
+}
+
+[data-icon="doc"] span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px black solid;
+  border-radius: 4px;
+  background:
+    linear-gradient(to left, black 100%, transparent 0)
+      no-repeat
+      4px 4px / 16px 2px,
+    linear-gradient(to left, black 100%, transparent 0)
+      no-repeat
+      4px 8px / 8px 2px,
+    linear-gradient(to left, black 100%, transparent 0)
+      no-repeat
+      4px 12px / 12px 2px;
 }
 
 /* draw progresively by duplicating a single element with box-shadow */
-.icon_sort_asc {
-	display: block;
-	width: 4px;
-	height: 2px;
-	background-color: black;
-	box-shadow: 0 4px 0, 4px 4px 0, 0 8px 0, 4px 8px 0, 8px 8px 0;
+[data-icon="sort_asc"] span {
+  display: block;
+  width: 4px;
+  height: 2px;
+  background-color: black;
+  box-shadow: 0 4px 0, 4px 4px 0, 0 8px 0, 4px 8px 0, 8px 8px 0;
 }
 
 /* draw the container inside and clip the excess with overflow: hidden */
-.icon_sort_desc {
-	display: block;
-	overflow: hidden;
-	width: 12px;
-	height: 12px;
+[data-icon="sort_desc"] span {
+  display: block;
+  overflow: hidden;
+  width: 12px;
+  height: 12px;
 
-	&::after {
-		content: "";
-		display: block;
-		width: 12px;
-		height: 2px;
-		background-color: black;
-		box-shadow: -4px 4px 0, -8px 8px 0;	
-	}
+  &::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: black;
+    box-shadow: -4px 4px 0, -8px 8px 0;	
+  }
 }
 
-.icon_bookmark {
-	display: block;
-	width: 18px;
-	height: 24px;
-	background-color: black;
-	/* border-radius: 2px; */
-	clip-path: polygon(0 0, 50% 8px, 100% 0, 100% 100%, 0 100%);
+[data-icon="bookmark"] span {
+  display: block;
+  width: 18px;
+  height: 28px;
+  background-color: black;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 8px), 0 100%);
 }
 
-.icon_anchor {
-	display: block;
-	width: 24px;
-	height: 24px;
-	background-color: black;
-	clip-path: path("M15 6C15 7.30622 14.1652 8.41746 13 8.82929V16.874C14.7252 16.4299 16 14.8638 16 13H18C18 15.973 15.8377 18.441 13 18.917V20C13 20.5523 12.5523 21 12 21C11.4477 21 11 20.5523 11 20V18.917C8.16229 18.441 6 15.973 6 13H8C8 14.8638 9.27477 16.4299 11 16.874V8.82929C9.83481 8.41746 9 7.30622 9 6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6ZM12 7C12.5523 7 13 6.55228 13 6C13 5.44772 12.5523 5 12 5C11.4477 5 11 5.44772 11 6C11 6.55228 11.4477 7 12 7Z");
+[data-icon="anchor"] span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  clip-path: path("M15 6C15 7.30622 14.1652 8.41746 13 8.82929V16.874C14.7252 16.4299 16 14.8638 16 13H18C18 15.973 15.8377 18.441 13 18.917V20C13 20.5523 12.5523 21 12 21C11.4477 21 11 20.5523 11 20V18.917C8.16229 18.441 6 15.973 6 13H8C8 14.8638 9.27477 16.4299 11 16.874V8.82929C9.83481 8.41746 9 7.30622 9 6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6ZM12 7C12.5523 7 13 6.55228 13 6C13 5.44772 12.5523 5 12 5C11.4477 5 11 5.44772 11 6C11 6.55228 11.4477 7 12 7Z");
 }
 
-.icon_tag {
-	display: block;
-	width: 100px;
-	height: 150px;
-	background-color: black;
-	clip-path: path("M 10,150 Q 0,150 0,140 V 50 Q 0,45 5,40 L 43,10 Q 50,5 58,10 L 95,40 Q 100,45 100,50 V 140 Q 100,150 90,150 H 10 M 50 35 m 9,0 a 9,9 0 1,0 -18,0 a 9,9 0 1,0 18,0 Z");
-	/*
-	circle
-	M cx cy
-	m r, 0
-	a r,r 0 1,0 -(r * 2),0
-	a r,r 0 1,0  (r * 2),0
-	*/
+[data-icon="tag"] span {
+  display: block;
+  width: 100px;
+  height: 150px;
+  background-color: black;
+  clip-path: path("M 10,150 Q 0,150 0,140 V 50 Q 0,45 5,40 L 43,10 Q 50,5 58,10 L 95,40 Q 100,45 100,50 V 140 Q 100,150 90,150 H 10 M 50 35 m 9,0 a 9,9 0 1,0 -18,0 a 9,9 0 1,0 18,0 Z");
+  /*
+  circle
+  M cx cy
+  m r, 0
+  a r,r 0 1,0 -(r * 2),0
+  a r,r 0 1,0  (r * 2),0
+  */
 }

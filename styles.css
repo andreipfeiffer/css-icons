@@ -11,11 +11,38 @@ body {
   margin: 0;
 }
 
-main {
+.icons_list {
+  all: unset;
+  list-style-type: none;
+
   padding: 2em;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  align-items: stretch;
+  flex-wrap: wrap;
   gap: 1em;
+
+  & li {
+    border: 1px #00000033 solid;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+    &::before {
+      content: attr(data-icon);
+      display: block;
+      position: absolute;
+      bottom: -0.5em;
+      font-size: smaller;
+      color: #aaa;
+      background: white;
+      padding: 0 1em;
+    }
+  }
 }
 
 footer {
