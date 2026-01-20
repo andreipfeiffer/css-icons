@@ -17,18 +17,18 @@ main {
   background: black;
 }
 
-[data-icon="pause"] span {
-  width: 5px;
-  height: 20px;
-  border-left: 5px black solid;
-  border-right: 5px black solid;
-}
-
 [data-icon="play"] span {
   width: 0px;
   height: 0px;
   border: 10px transparent solid;
   border-left: 15px red solid;
+}
+
+[data-icon="pause"] span {
+  width: 5px;
+  height: 20px;
+  border-left: 5px black solid;
+  border-right: 5px black solid;
 }
 
 [data-icon="next"] span {
