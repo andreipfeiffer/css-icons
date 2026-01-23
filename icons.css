@@ -1,7 +1,3 @@
-main {
-  --icon-size: 20px;
-}
-
 [data-icon="stop"] span {
   width: 20px;
   /* height: 20px; */
