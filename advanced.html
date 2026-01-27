@@ -417,6 +417,20 @@
         bottom: 2px;
       }
     }
+
+    [data-icon="tag"] span {
+      width: 100px;
+      height: 150px;
+      background-color: black;
+      clip-path: path("M 10,150 Q 0,150 0,140 V 50 Q 0,45 5,40 L 43,10 Q 50,5 58,10 L 95,40 Q 100,45 100,50 V 140 Q 100,150 90,150 H 10 M 50 35 m 9,0 a 9,9 0 1,0 -18,0 a 9,9 0 1,0 18,0 Z");
+      /*
+      circle
+      M cx cy
+      m r, 0
+      a r,r 0 1,0 -(r * 2),0
+      a r,r 0 1,0  (r * 2),0
+      */
+    }
   </style>
 </head>
 
@@ -447,7 +461,14 @@
 
       <li data-icon="sort_asc"><span></span></li>
       <li data-icon="sort_desc"><span></span></li>
+      <li data-icon="tag"><span></span></li>
     </ul>
   </main>
+
+  <footer>
+    Icon images:
+    <a href="https://img.icons8.com/win10/1200/generic-sorting-2.jpg">Sort</a>,
+    <a href="https://images.icon-icons.com/2248/PNG/512/tag_icon_135119.png">Tag</a>
+</footer>
 </body>
 </html>
